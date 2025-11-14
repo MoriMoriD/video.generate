@@ -27,7 +27,7 @@ def generate_script():
     )
 
     with open("input/script.txt", "w", encoding="utf-8") as f:
-        f.write(res.choices[0].message["content"])
+        f.write(res.choices[0].message.content)
 
 if __name__ == "__main__":
     generate_script()
